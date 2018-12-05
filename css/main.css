@@ -1,0 +1,1750 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar {
+    background-color: rgba(50, 55, 65, 0.8);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    position: absolute;
+    float: top;
+    z-index: 2000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    width: 950px;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    font-family: "Segoe UI";
+    font-size: 0.750em;
+}
+
+.title-e {
+    color: #4BCAFF;
+}
+
+.all-buttons {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.button-part-1 {
+    display: flex;
+}
+
+.button-part-2 {
+    display: flex;
+}
+
+.home-button, .services-button, .features-button, .portfolio-button, .contact-button {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #CCCCCC;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    font-size: 0.688em;
+}
+
+.home-button {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #4BCAFF;
+    color: #4BCAFF;
+}
+
+.first-tab {
+    position: relative;
+    color: white;
+    background-image: url("../img/blueasy.jpg");
+    object-fit: fill;
+    height: 645px;
+}
+
+.intro-tab-whole {
+    text-align: center;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro-text1 {
+    font-family: "Segoe UI";
+    font-size: 2.188em;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.intro-text1 span {
+    background-color: rgba(50, 55, 65, 0.8);
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.intro-text2 {
+    margin-top: 10px;
+    font-family: "Segoe UI";
+    font-size: 2.188em;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.intro-text2 span {
+    background-color: rgba(50, 55, 65, 0.8);
+    padding-bottom: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.services-tab {
+    color: white;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+.services-tab h2 {
+    font-family: "Segoe UI";
+    font-size: 1.875em;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    align-content: center;
+    padding-top: 50px;
+}
+
+.halfunderline {
+    background-color: white;
+    height: 2px;
+    width: 45px;
+    margin-bottom: 40px;
+}
+
+.gray-halfunderline {
+    background-color: #666666;
+    height: 2px;
+    width: 45px;
+}
+
+.second-tab {
+    width: 100%;
+    background-color: #4BCAFF;
+    display: flex;
+    justify-content: center;
+}
+
+.services-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'b c d e';
+    grid-gap: 25px;
+    font-family: "Segoe UI";
+    width: 950px;
+}
+
+.services-grid-container h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.services-coffee {
+    width: 218px;
+    height: 200px;
+    font-size: 0.625em;
+    grid-area: b;
+}
+
+.services-instant {
+    width: 218px;
+    height: 200px;
+    font-size: 0.625em;
+    grid-area: c;
+}
+
+.services-serious {
+    width: 218px;
+    height: 200px;
+    font-size: 0.625em;
+    grid-area: d;
+}
+
+.services-frame {
+    width: 218px;
+    height: 200px;
+    font-size: 0.625em;
+    grid-area: e;
+}
+
+.third-header-bar {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.third-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+}
+
+.third-header-center {
+    align-items: center;
+    display: flex;
+}
+
+.third-header-title {
+    font-family: "Segoe UI";
+    font-size: 1.563em;
+    font-weight: 100;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.third-all-buttons {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.all-button, .panoramas-button, .portraits-button, .macro-button, .journal-button{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #666666;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    font-size: 0.688em;
+}
+
+.all-button {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #5ac6f2;
+    color: #5ac6f2;
+}
+
+.third-tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.third-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a b c d'
+    'e f g h';
+    grid-gap: 25px;
+    width: 950px;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.profile_1 {
+    grid-area: a;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_2 {
+    grid-area: b;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_3 {
+    grid-area: c;
+    height: 218px;
+    width: 218px;
+}
+
+.profile_4 {
+    grid-area: d;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_5 {
+    grid-area: e;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_6 {
+    grid-area: f;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_7 {
+    grid-area: g;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.profile_8 {
+    grid-area: h;
+    height: 218px;
+    width: 218px;
+    opacity: 0.8;
+}
+
+.fourth-tab {
+    background-color: #516067;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-grid-container {
+    padding-top: 50px;
+    width: 950px;
+    display: grid;
+    grid-template-areas: 
+    'a b';
+    padding-bottom: 50px;
+}
+
+.fourth-grid-item1 {
+    font-family: "Segoe UI";
+    grid-area: a;
+}
+
+.fourth-grid-item1 h2 {
+    font-size: 1.563em;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fourth-text1 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+    padding-bottom: 4px;
+}
+
+.fourth-text2 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+    padding-bottom: 4px;
+}
+
+.fourth-text3 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+    padding-bottom: 25px;
+}
+
+.fourth-text4 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+    padding-bottom: 4px;
+}
+
+.fourth-text5 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+    padding-bottom: 4px;
+}
+
+.fourth-text6 {
+    color: white;
+    font-size: 0.688em;
+    width: 400px;
+}
+
+.fourth-img {
+    width: 450px;
+    height: 260px;
+    float: right;
+}
+
+.fourth-button {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #344149;
+
+    border-style: solid;
+    border-color: #344149;
+    border-width: 1.5px;
+    display: inline-block;
+    font-size: 0.625em;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+
+.halfunderline2 {
+    background-color: white;
+    height: 2px;
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+.halfunderline3 {
+    background-color: white;
+    height: 2px;
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+.halfunderline4 {
+    background-color: #666666;
+    height: 2px;
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+.fifth-tab {
+    background-color: #4BCAFF;
+}
+
+.fifth-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+}
+
+.fifth-header-title {
+    color: white;
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 1.563em;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.twitter-icon {
+    float: right;
+    width: 26px;
+    height: 20px;
+    align-self: center;
+}
+
+.fifth-header-combined {
+    float: left;
+}
+
+.fifth-text {
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 1.563em;
+    font-weight: 100;
+}
+
+.fifth-text-line1 {
+    padding-bottom: 15px;
+}
+
+.fifth-text-line2 {
+    padding-bottom: 50px;
+}
+
+.sixth-tab {
+    background-image: url("../img/blueasy2.jpg");
+    object-fit: fill;
+    height: 400px;
+    background-position: center;
+}
+
+.sixth-header {
+    display: flex;
+    justify-content: center;
+}
+
+.sixth-tab-title {
+    font-family: "Segoe UI";
+    color: white;
+}
+
+.sixth-tab-title h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.563em;
+    width: 950px;
+    padding-top: 50px;
+}
+
+.sixth-center-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.sixth-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d';
+    width: 950px;  
+    grid-gap: 25px; 
+}
+
+.sixth-text1 {
+    grid-area: a;
+    font-size: 0.688em;
+    color: white;
+    font-family: "Segoe UI";
+}
+
+.sixth-text2 {
+    grid-area: c;
+    font-size: 0.688em;
+    color: white;
+    font-family: "Segoe UI";
+}
+
+.sixth-text3 {
+    grid-area: b;
+    font-size: 0.688em;
+    color: white;
+    font-family: "Segoe UI";
+}
+
+.sixth-text4 {
+    grid-area: d;
+    padding-right: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sixth-text-line2 {
+    padding-top: 3px;
+}
+
+.sixth-text-line3 {
+    padding-top: 3px;
+}
+
+.sixth-text-line5 {
+    padding-top: 3px;
+}
+
+.sixth-text-line6 {
+    padding-top: 3px;
+}
+
+.sixth-text-line8 {
+    padding-top: 3px;
+}
+
+.sixth-text-line9 {
+    padding-top: 3px;
+}
+
+.sixth-icon-border1, .sixth-icon-border2, .sixth-icon-border3, .sixth-icon-border4 {
+    border-style: solid;
+    border-color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth-icon-border1:hover, .sixth-icon-border2:hover, .sixth-icon-border3:hover, .sixth-icon-border4:hover {
+    background-color: #00b3fd;
+}
+
+.sixth-grid-container ul {
+    display: flex;
+}
+
+.sixth-icon1 {
+    list-style-type: none;
+}
+
+.seventh-tab {
+    background-color: white;
+    color: #666666;
+}
+
+.seventh-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+}
+
+.seventh-header-title {
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 1.563em;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.seventh-header i {
+    float: right;
+    width: 26px;
+    height: 20px;
+    align-self: center;
+    color: #666666;
+}
+
+.seventh-header-combined {
+    float: left;
+}
+
+.seventh-text {
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+    font-family: "Segoe UI";
+    font-size: 1.375em;
+    font-weight: 100;
+}
+
+.seventh-text-line1 {
+    padding-bottom: 15px;
+}
+
+.seventh-text-line2 {
+    padding-bottom: 30px;
+}
+
+.seventh-tab-blue {
+    margin: 0 auto;
+    width: 950px;
+    font-size: 0.688em;
+    color: #5ac6f2;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.eight-tab {
+    background-image: url("../img/blueasy3.png");
+    object-fit: fill;
+    height: 670px;
+    background-position: center;
+}
+
+.eight-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    width: 950px;
+    align-content: center;
+}
+
+.eigth-header-combined {
+    float: left;
+}
+
+.eigth-header-title {
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 1.563em;
+    text-transform: uppercase;
+    padding-top: 50px;
+    color: white;
+}
+
+.eight-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c c';
+    margin: 0 auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 80px;
+    width: 950px;
+}
+
+.eight-container-item1 p {
+    color: white;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 0.688em;
+    padding-bottom: 5px;
+}
+
+.eigth-input1 {
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 400px;
+    height: 45px;
+    grid-area: a;
+}
+
+.eigth-input2 {
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 400px;
+    height: 45px;
+    float: bottom;
+}
+
+.eight-email {
+    padding-top: 30px;
+}
+
+.eight-container-item2 {
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 0.688em;
+    width: 450px;
+    height: 150px;
+    grid-area: b;
+}
+
+.eight-item2-floater1 {
+    float: top;
+    line-height: 1.8;
+    padding-top: 12px;
+}
+
+.eight-item2-floater2 {
+    float: bottom;
+    padding-top: 30px;
+    line-height: 1.8;
+}
+
+.eight-container-item3 {
+    grid-area: c;
+    color: white;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 0.688em;
+}
+
+.eigth-input3 {
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 400px;
+    height: 45px;
+    float: bottom;
+    width: 950px;
+    height: 200px;
+}
+
+.eight-button {
+    margin: 0 auto;
+    width: 950px;
+}
+
+.eigth-button-1 {
+    border-style: none;
+    color: white;
+    background-color: #4BCAFF;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 0.688em;
+    width: 300px;
+    height: 45px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #353F48;
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bar {
+    margin: 0 auto;
+    width: 950px;
+}
+
+.footer-bar p {
+    float: right;
+    color: #515f67;
+    font-family: "Segoe UI";
+    font-size: 1em;
+}
+
+.footer-whole {
+    display: flex;
+    float: left;
+    color: #515f67;
+    font-family: "Segoe UI";
+    font-size: 0.688em;
+    font-weight: 600;
+    align-self: center;
+}
+
+.footer-button-1 {
+    border-right: 1.5px solid #515f67;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.footer-button-2 {
+    border-right: 1.5px solid #515f67;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.footer-button-3 {
+    border-right: 1.5px solid #515f67;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 977px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-tab-whole {
+        font-size: 0.6em;
+    }
+
+    .title {
+        padding-bottom: 10px;
+    }
+
+    .all-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-tab {
+        background-size: cover;
+        height: 500px;
+
+    }
+
+    .second-tab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-tab {
+        align-items: center;
+        width: 0%;
+    }
+
+    .services-grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 0%;
+    }
+
+    .third-header-title {
+        margin-left: 10px;
+    }
+
+    .gray-halfunderline {
+        margin-left: 10px;  
+    }
+
+    .third-all-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .third-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f'
+        'g h';
+        grid-gap: 10px;
+        align-items: center;
+        padding-bottom: 50px;
+        width: 100%
+        
+    }
+
+    .third-grid-container img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .fourth-grid-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .picture_1 {
+        padding-left: 20px;
+    }
+
+    .picture_2 {
+        padding-right: 12px;
+    }
+
+    .picture_3 {
+        padding-left: 20px;
+    }
+
+    .picture_4 {
+        padding-right: 12px;
+    }
+
+    .picture_5 {
+        padding-left: 20px;
+    }
+
+    .picture_6 {
+        padding-right: 12px;
+    }
+
+    .picture_7 {
+        padding-left: 20px;
+    }
+
+    .picture_8 {
+        padding-right: 12px;
+    }
+
+    .fourth-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b';
+        grid-gap: 0px;
+        margin: 0 auto;
+    }
+
+    .fourth-button {
+        margin-left: 80px;
+    }
+
+    .fourth-grid-item1 {
+        margin: 0 auto;
+
+    }
+
+    .fourth-text1, .fourth-text2, .fourth-text3, .fourth-text4, .fourth-text5, .fourth-text6 {
+        width: 250px;
+        padding-left: 20px;
+    }
+
+    .fourth-img {
+        width: 250px;
+        height: 144px;
+        padding-top: 30px;
+    }
+
+    .fourth-grid-item2 {
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .fifth-header{
+        display: flex;
+        justify-content: space-around;
+        width: 0px;
+    }
+
+    .fifth-text {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .sixth-tab {
+        padding-bottom: 100px;
+    }
+
+    .sixth-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+        grid-gap: 10px;
+        margin: 0 auto;
+    }
+
+    .sixth-text1 {
+        grid-area: a;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    .sixth-text2 {
+        grid-area: b;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    .sixth-text3 {
+        grid-area: c;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+
+    .sixth-header {
+        margin-left: 490px;
+    }
+
+    .sixth-center-grid {
+        text-align: center;
+    }
+
+    .sixth-text-line9 {
+        padding-bottom: 10px;
+    }
+        
+    .seventh-text {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .seventh-header-combined {
+        margin-left: 70px;
+    }
+
+    .seventh-header {
+        margin-right: 250px;
+    }
+
+    .fas.fa-quote-right {
+        margin-right: 690px;
+        padding-top: 20px;
+    }
+
+    .seventh-tab-blue {
+        margin-left: 20px;
+    }
+
+    .eight-tab {
+        padding-bottom: 140px;
+    }
+
+    .eigth-header-combined {
+        margin-left: 10px;
+    }
+
+    .eight-container-full-name {
+        margin-left: 22px;
+    }
+
+    .eight-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+        margin: 0 auto;
+        grid-row-gap: 5px;
+        width: 950px;
+    }
+
+    .eight-item2-floater1 {
+        width: 275px;
+        padding-left: 22px;
+    }
+
+    .eight-item2-floater2 {
+        width: 275px;
+        padding-left: 22px;
+        padding-top: 8px;
+    } 
+
+    .eigth-input1 {
+        height: 45px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eight-email {
+        margin-left: 22px;
+    }
+
+    .eigth-input2 {
+        height: 45px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eight-container-message {
+        margin-left: 22px;
+        padding-top: 55px;
+    }
+
+    .eigth-input3 {
+        height: 200px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eigth-button-1 {
+        height: 45px;
+        width: 250px;
+        margin-left: 23px;
+    }
+
+    .footer-bar {
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+
+    footer {
+        height: 90px;
+        width: 100%;
+    }header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-tab-whole {
+        font-size: 0.6em;
+    }
+
+    .title {
+        padding-bottom: 10px;
+    }
+
+    .all-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-tab {
+        background-size: cover;
+        height: 500px;
+
+    }
+
+    .second-tab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-tab {
+        align-items: center;
+        width: 0%;
+    }
+
+    .services-grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 0%;
+    }
+
+    .third-header-title {
+        margin-left: 10px;
+    }
+
+    .gray-halfunderline {
+        margin-left: 10px;  
+    }
+
+    .third-all-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .third-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f'
+        'g h';
+        grid-gap: 10px;
+        align-items: center;
+        padding-bottom: 50px;
+        width: 100%
+        
+    }
+
+    .third-grid-container img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .fourth-grid-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .picture_1 {
+        padding-left: 20px;
+    }
+
+    .picture_2 {
+        padding-right: 12px;
+    }
+
+    .picture_3 {
+        padding-left: 20px;
+    }
+
+    .picture_4 {
+        padding-right: 12px;
+    }
+
+    .picture_5 {
+        padding-left: 20px;
+    }
+
+    .picture_6 {
+        padding-right: 12px;
+    }
+
+    .picture_7 {
+        padding-left: 20px;
+    }
+
+    .picture_8 {
+        padding-right: 12px;
+    }
+
+    .fourth-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b';
+        grid-gap: 0px;
+        margin: 0 auto;
+    }
+
+    .fourth-button {
+        margin-left: 80px;
+    }
+
+    .fourth-grid-item1 {
+        margin: 0 auto;
+
+    }
+
+    .fourth-text1, .fourth-text2, .fourth-text3, .fourth-text4, .fourth-text5, .fourth-text6 {
+        width: 250px;
+        padding-left: 20px;
+    }
+
+    .fourth-img {
+        width: 250px;
+        height: 144px;
+        padding-top: 30px;
+    }
+
+    .fourth-grid-item2 {
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .fifth-header{
+        display: flex;
+        justify-content: space-around;
+        width: 0px;
+    }
+
+    .fifth-text {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .sixth-tab {
+        padding-bottom: 100px;
+    }
+
+    .sixth-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+        grid-gap: 10px;
+        margin: 0 auto;
+    }
+
+    .sixth-text1 {
+        grid-area: a;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    .sixth-text2 {
+        grid-area: b;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    .sixth-text3 {
+        grid-area: c;
+        text-align: start;
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+
+    .sixth-header {
+        margin-left: 490px;
+    }
+
+    .sixth-center-grid {
+        text-align: center;
+    }
+
+    .sixth-text-line9 {
+        padding-bottom: 10px;
+    }
+        
+    .seventh-text {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .seventh-header-combined {
+        margin-left: 70px;
+    }
+
+    .seventh-header {
+        margin-right: 250px;
+    }
+
+    .fas.fa-quote-right {
+        margin-right: 690px;
+        padding-top: 20px;
+    }
+
+    .seventh-tab-blue {
+        margin-left: 20px;
+    }
+
+    .eight-tab {
+        padding-bottom: 140px;
+    }
+
+    .eigth-header-combined {
+        margin-left: 10px;
+    }
+
+    .eight-container-full-name {
+        margin-left: 22px;
+    }
+
+    .eight-grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c';
+        margin: 0 auto;
+        grid-row-gap: 5px;
+        width: 950px;
+    }
+
+    .eight-item2-floater1 {
+        width: 275px;
+        padding-left: 22px;
+    }
+
+    .eight-item2-floater2 {
+        width: 275px;
+        padding-left: 22px;
+        padding-top: 8px;
+    } 
+
+    .eigth-input1 {
+        height: 45px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eight-email {
+        margin-left: 22px;
+    }
+
+    .eigth-input2 {
+        height: 45px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eight-container-message {
+        margin-left: 22px;
+        padding-top: 55px;
+    }
+
+    .eigth-input3 {
+        height: 200px;
+        width: 250px;
+        margin-left: 22px;
+    }
+
+    .eigth-button-1 {
+        height: 45px;
+        width: 250px;
+        margin-left: 23px;
+    }
+
+    .footer-bar {
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+
+    footer {
+        height: 90px;
+        width: 100%;
+    }
+
+}
+    
+
+
+
+
+
+
+    
+     
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
